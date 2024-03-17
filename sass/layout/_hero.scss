@@ -1,0 +1,10 @@
+#redDiv {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 4px;
+  transition: 1s cubic-bezier(0, 0.5, 0.5, 1);
+}

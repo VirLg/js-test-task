@@ -6,7 +6,7 @@ const ref = {
   refRightBtn: document.querySelector('.rightBtn'),
   refBtn: document.querySelector('.btn'),
 };
-window.addEventListener('resize', function () {
+window.addEventListener('resize', () => {
   redDiv.style.left = '40px';
   ref.refLeftBtn.disabled = true;
 });

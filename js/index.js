@@ -1,16 +1,17 @@
 let positionX = 0;
-window.addEventListener('resize', function () {
-  redDiv.style.left = '40px';
-  refLeftBtn.disabled = true;
-});
+
 const ref={
   refLeftBtn:document.querySelector('.leftBtn'),
   refHero :document.querySelector('#redDiv'),
   refRightBtn : document.querySelector('.rightBtn'),
 
 }
+window.addEventListener('resize', function () {
+  redDiv.style.left = '40px';
+  ref.refLeftBtn.disabled = true;
+});
 ref.refRightBtn.style.marginTop = `${ ref.refHero.getBoundingClientRect().height + 15}px`;
-ref.refLeftBtn.style.marginTop = `${refHero.getBoundingClientRect().height + 15}px`;
+ref.refLeftBtn.style.marginTop = `${ref.efHero.getBoundingClientRect().height + 15}px`;
 function positionHero() {
   positionX = ref.refHero.getBoundingClientRect().x;
 }

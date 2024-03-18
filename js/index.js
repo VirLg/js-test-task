@@ -10,11 +10,12 @@ window.addEventListener('resize', function () {
   redDiv.style.left = '40px';
   ref.refLeftBtn.disabled = true;
 });
-ref.refRightBtn.style.marginTop = `${ ref.refHero.getBoundingClientRect().height + 15}px`;
-ref.refLeftBtn.style.marginTop = `${ref.efHero.getBoundingClientRect().height + 15}px`;
 function positionHero() {
   positionX = ref.refHero.getBoundingClientRect().x;
 }
+ref.refRightBtn.style.marginTop = `${ ref.refHero.getBoundingClientRect().height + 15}px`;
+ref.refLeftBtn.style.marginTop = `${ref.efHero.getBoundingClientRect().height + 15}px`;
+
 ref.refLeftBtn.addEventListener('click', ()=>{
     positionHero();
   redDiv.style.left = positionX - 88 + 'px';

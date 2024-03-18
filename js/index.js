@@ -4,7 +4,6 @@ const ref={
   refLeftBtn:document.querySelector('.leftBtn'),
   refHero :document.querySelector('#redDiv'),
   refRightBtn : document.querySelector('.rightBtn'),
-
 }
 window.addEventListener('resize', function () {
   redDiv.style.left = '40px';
@@ -13,8 +12,8 @@ window.addEventListener('resize', function () {
 function positionHero() {
   positionX = ref.refHero.getBoundingClientRect().x;
 }
-ref.refRightBtn.style.marginTop = `${ ref.refHero.getBoundingClientRect().height + 15}px`;
-ref.refLeftBtn.style.marginTop = `${ref.efHero.getBoundingClientRect().height + 15}px`;
+ref.refRightBtn.style.marginTop = `${ref.refHero.getBoundingClientRect().height + 15}px`;
+ref.refLeftBtn.style.marginTop = `${ref.refHero.getBoundingClientRect().height + 15}px`;
 
 ref.refLeftBtn.addEventListener('click', ()=>{
     positionHero();
